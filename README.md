@@ -12,10 +12,10 @@ OE-Core only. The recipes will simply install fonts into the filesystem. You may
 
 ## Todos
 * [ ] Set up packaging system for CJK fonts (they don't follow the 4 width x n weights convention) : https://www.google.com/get/noto/help/cjk/
-* [ ]Add rest of the fonts
-* [ ]Set up packagegroups for commonly used groups
-* [ ]Test against multiple yocto releases, perhaps set up branches
-* [ ]CI against Yocto / OE-Core
+* [ ] Add rest of the fonts
+* [ ] Set up packagegroups for commonly used groups
+* [ ] Test against multiple yocto releases, perhaps set up branches
+* [ ] CI against Yocto / OE-Core
 
 ## Bugs, Fixes, etc
 
