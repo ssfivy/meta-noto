@@ -1,7 +1,5 @@
 # CJK fonts have their own packaging convention, please refer to the homepage for full explanation.
 
-HOMEPAGE ?= "https://www.google.com/get/noto/help/cjk/"
-
 PACKAGES = " \
 ${PN}-thin \
 ${PN}-extralight \

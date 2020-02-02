@@ -1,5 +1,6 @@
 
 inherit noto-fonts
+inherit noto-cjk
 inherit noto-cjk-styles
 
 SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoSerifCJKkr-hinted.zip"
