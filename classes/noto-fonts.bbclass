@@ -21,7 +21,7 @@ FONT_INSTALL_DIR = "${datadir}/fonts/opentype/noto"
 
 do_install() {
     install -d ${D}${FONT_INSTALL_DIR}
-    find ./ -name '*.tt[cf]' -exec install -m 0644 {} ${D}${FONT_INSTALL_DIR} \;
+    find ./ -name '*.[ot]t[cf]' -exec install -m 0644 {} ${D}${FONT_INSTALL_DIR} \;
 }
 
 # Default file inclusion for fonts that does not have many styles
