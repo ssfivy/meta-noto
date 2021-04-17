@@ -27,7 +27,7 @@ OE-Core only. The recipes will simply install fonts into the filesystem. You may
 * [ ] Add rest of the fonts
 * [ ] Experiment with addung unhinted fonts that are unlisted in the main website, e.g. NotoSans-unhinted
 * [ ] Set up packagegroups for commonly used groups
-* [ ] Test against multiple yocto releases, perhaps set up branches
+* [ ] Test against multiple yocto releases
 * [ ] CI against Yocto / OE-Core
 
 ## Bugs, Fixes, etc
