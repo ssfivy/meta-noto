@@ -25,4 +25,4 @@ do_install() {
 }
 
 # Default file inclusion for fonts that does not have many styles
-FILES_${PN} = "${FONT_INSTALL_DIR}/*"
+FILES:${PN} = "${FONT_INSTALL_DIR}/*"
