@@ -24,6 +24,11 @@ OE-Core only. The recipes will simply install fonts into the filesystem. You may
 * Covers all CJK fonts
 
 ## Todos
+
+I'm no longer working with Yocto, so I probably won't make further updates myself.
+I'll happily accept pull requests for any bugs or improvements.
+
+Some potential improvements that might be doable:
 * [ ] Add rest of the fonts
 * [ ] Experiment with addung unhinted fonts that are unlisted in the main website, e.g. NotoSans-unhinted
 * [ ] Set up packagegroups for commonly used groups
