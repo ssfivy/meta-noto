@@ -19,7 +19,8 @@ NOTO_SRC_URI_PREFIX = "https://noto-website-2.storage.googleapis.com/pkgs"
 NOTOFONTS_SRC_URI_PREFIX = "https://github.com/notofonts"
 
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
 
 # we don't need a compiler nor a c library for these fonts
 INHIBIT_DEFAULT_DEPS = "1"
