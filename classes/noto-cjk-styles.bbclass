@@ -2,12 +2,10 @@
 
 PACKAGES = " \
 ${PN}-thin \
-${PN}-extralight \
 ${PN}-light \
 ${PN}-demilight \
 ${PN}-regular \
 ${PN}-medium \
-${PN}-semibold \
 ${PN}-bold \
 ${PN}-black \
 \
@@ -19,12 +17,10 @@ ${PN}-mono-bold \
 # while still being compatible with all 4 packaging versions given by Google.
 
 FILES:${PN}-thin            = "${FONT_INSTALL_DIR}/*-Thin.[ot]tf"
-FILES:${PN}-extralight      = "${FONT_INSTALL_DIR}/*-ExtraLight.[ot]tf"
 FILES:${PN}-light           = "${FONT_INSTALL_DIR}/*-Light.[ot]tf"
 FILES:${PN}-demilight       = "${FONT_INSTALL_DIR}/*-DemiLight.[ot]tf"
 FILES:${PN}-regular         = "${FONT_INSTALL_DIR}/NotoSans[!M]*-Regular.[ot]tf ${FONT_INSTALL_DIR}/NotoSerif*-Regular.[ot]tf"
 FILES:${PN}-medium          = "${FONT_INSTALL_DIR}/*-Medium.[ot]tf"
-FILES:${PN}-semibold        = "${FONT_INSTALL_DIR}/*-SemiBold.[ot]tf"
 FILES:${PN}-bold            = "${FONT_INSTALL_DIR}/NotoSans[!M]*-Bold.[ot]tf    ${FONT_INSTALL_DIR}/NotoSerif*-Bold.[ot]tf"
 FILES:${PN}-black           = "${FONT_INSTALL_DIR}/*-Black.[ot]tf"
 
