@@ -13,8 +13,7 @@ inherit allarch fontcache
 
 NOTO_SRC_URI_PREFIX = "https://noto-website-2.storage.googleapis.com/pkgs"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}"
 
 # we don't need a compiler nor a c library for these fonts
 INHIBIT_DEFAULT_DEPS = "1"
