@@ -3,6 +3,6 @@ inherit noto-fonts
 inherit noto-cjk
 inherit noto-cjk-styles
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoSansJP.zip"
-SRC_URI[sha256sum] = "6886c5526628c08f1e21a84f4658ab3daf6d0233de8dc54526ccf9f40bfab18e"
+SRC_URI = "${NOTO_CJK_SANS_SRC_URI_PREFIX}/16_NotoSansJP.zip"
+SRC_URI[sha256sum] = "2bbdd2c20f30670b39ca735c96d75f1fdabdb348103e43b820cf17701fd22b18"
 
