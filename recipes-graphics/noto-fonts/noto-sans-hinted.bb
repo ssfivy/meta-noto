@@ -2,6 +2,6 @@
 inherit noto-fonts
 inherit noto-styles
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoSans-hinted.zip"
-SRC_URI[sha256sum] = "02e5f834c526f815f3b9f90f98e2b5b09f17cec107cc751c3b58fc3a2c0b2942"
+SRC_URI = "${NOTO_LGC_SRC_URI_PREFIX}/NotoSans-v2.015/NotoSans-v2.015.zip"
+SRC_URI[sha256sum] = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
 

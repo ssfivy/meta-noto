@@ -1,6 +1,7 @@
 
 inherit noto-fonts
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoMono-hinted.zip"
-SRC_URI[sha256sum] = "2722ae9033c9e306e784b9254ca86c58c7af7483051583f767e05d03bc252bda"
+# NotoMono has been superseded by NotoSansMono; redirecting to that package.
+SRC_URI = "${NOTO_LGC_SRC_URI_PREFIX}/NotoSansMono-v2.014/NotoSansMono-v2.014.zip"
+SRC_URI[sha256sum] = "090cf6c5e03f337a755630ca888b1fef463e64ae7b33ee134e9309c05f978732"
 

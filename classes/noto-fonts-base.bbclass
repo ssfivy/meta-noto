@@ -7,11 +7,17 @@ HOMEPAGE ??= "https://www.google.com/get/noto/"
 
 # all google noto fonts are OFL-1.1 licensed
 LICENSE = "OFL-1.1"
-LIC_FILES_CHKSUM = "file://LICENSE_OFL.txt;md5=55719faa0112708e946b820b24b14097"
+LIC_FILES_CHKSUM = "file://OFL.txt;md5=ead60c8cdf357c455cf69725c35c3b2d"
 
 inherit allarch fontcache
 
-NOTO_SRC_URI_PREFIX = "https://noto-website-2.storage.googleapis.com/pkgs"
+# CJK fonts are now hosted on GitHub under notofonts/noto-cjk
+NOTO_CJK_SANS_SRC_URI_PREFIX = "https://github.com/notofonts/noto-cjk/releases/download/Sans2.004"
+NOTO_CJK_SERIF_SRC_URI_PREFIX = "https://github.com/notofonts/noto-cjk/releases/download/Serif2.003"
+
+# Latin/Greek/Cyrillic (and Mono/Display) fonts are now hosted on GitHub under notofonts/latin-greek-cyrillic
+NOTO_LGC_SRC_URI_PREFIX = "https://github.com/notofonts/latin-greek-cyrillic/releases/download"
+
 S = "${WORKDIR}"
 
 # we don't need a compiler nor a c library for these fonts
