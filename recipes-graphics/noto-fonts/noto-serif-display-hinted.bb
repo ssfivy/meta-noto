@@ -2,6 +2,9 @@
 inherit noto-fonts
 inherit noto-styles
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoSerifDisplay-hinted.zip"
-SRC_URI[sha256sum] = "769b74543460f3ed3b2cf905c12afbc2a741b47b178be77cde935de417914d88"
+# NotoSerifDisplay-v2.009.zip stores OFL.txt at ../ in the archive; use common-licenses instead
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/OFL-1.1;md5=fac3a519e5e9eb96316656e0ca4f2b90"
+
+SRC_URI = "${NOTO_LGC_SRC_URI_PREFIX}/NotoSerifDisplay-v2.009/NotoSerifDisplay-v2.009.zip"
+SRC_URI[sha256sum] = "ef1df6b20037f5a7e5af30023359253e37ee199b2bf97143a01c88c5097af467"
 
