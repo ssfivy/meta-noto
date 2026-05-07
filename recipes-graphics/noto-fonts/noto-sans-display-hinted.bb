@@ -2,6 +2,9 @@
 inherit noto-fonts
 inherit noto-styles
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoSansDisplay-hinted.zip"
-SRC_URI[sha256sum] = "1e1759a5698e44ea4d3ae869f595bd9051b193b4ea2582f3ad4d217baeae3f0c"
+# NotoSansDisplay has no standalone release in notofonts/latin-greek-cyrillic.
+# Falling back to NotoSans-v2.015 which may include Display variants.
+# See https://github.com/ssfivy/meta-noto/issues/39
+SRC_URI = "${NOTO_LGC_SRC_URI_PREFIX}/NotoSans-v2.015/NotoSans-v2.015.zip"
+SRC_URI[sha256sum] = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
 
