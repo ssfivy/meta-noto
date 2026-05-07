@@ -1,6 +1,13 @@
 
 inherit noto-fonts
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoEmoji-unhinted.zip"
-SRC_URI[sha256sum] = "61f6a71a8e84b57f52b2255ee8bb6e0bf14515ff7c453485f11f497d9cdc5d78"
+LICENSE = "OFL-1.1 & Apache-2.0"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
+
+SRC_URI = "https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.042.zip"
+SRC_URI[sha256sum] = "6743379d289c1f664ce18620b02b8949ee5b349f155cf8987cb9cd042eee18b9"
+
+do_install:append() {
+    find ${D}${FONT_INSTALL_DIR} -name 'NotoColor*.ttf' -delete
+}
 

@@ -1,7 +1,13 @@
+# The per-weight OTC format is no longer distributed upstream.
+# This meta-package pulls in the Super OTC which contains all CJK weights.
+SUMMARY = "Google Noto Sans CJK fonts - Black weight (now provided via noto-sans-cjk)"
+inherit allarch
 
-inherit noto-fonts
-inherit noto-cjk
+SECTION = "fonts"
+HOMEPAGE = "https://www.google.com/get/noto/help/cjk/"
+LICENSE = "OFL-1.1"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/OFL-1.1;md5=fac3a519e5e9eb96316656e0ca4f2b90"
 
-SRC_URI = "${NOTO_SRC_URI_PREFIX}/NotoSansCJK-Black.ttc.zip"
-SRC_URI[sha256sum] = "be2897aca58f8fcab3bad6934875941f4310b6310707ead867efcd0460415fea"
-
+INHIBIT_DEFAULT_DEPS = "1"
+ALLOW_EMPTY:${PN} = "1"
+RDEPENDS:${PN} = "noto-sans-cjk"

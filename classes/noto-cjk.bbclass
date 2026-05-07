@@ -11,3 +11,6 @@ Noto CJK fonts come in 4 packaging formats. Glyph designs are identical regardle
 "
 
 HOMEPAGE ?= "https://www.google.com/get/noto/help/cjk/"
+
+# CJK GitHub releases include LICENSE (same OFL-1.1 text) instead of OFL.txt
+LIC_FILES_CHKSUM = "file://LICENSE;md5=55719faa0112708e946b820b24b14097"
