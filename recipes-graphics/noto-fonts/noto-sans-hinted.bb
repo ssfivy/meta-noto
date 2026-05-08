@@ -5,3 +5,9 @@ inherit noto-styles
 SRC_URI = "${NOTO_LGC_SRC_URI_PREFIX}/NotoSans-v2.015/NotoSans-v2.015.zip"
 SRC_URI[sha256sum] = "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
 
+do_install:append() {
+    # The new release bundles variable fonts (bracket notation); remove them
+    # as noto-styles splits packages by static weight suffixes only
+    find ${D}${FONT_INSTALL_DIR} -name '*\[*\]*' -delete
+}
+
